@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests UF1646</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .question-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+        .option {
+            background-color: #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .option:hover:not(.correct):not(.incorrect) {
+            background-color: #d1d5db;
+            transform: translateY(-2px);
+        }
+        .option.correct {
+            background-color: #dcfce7;
+            border: 2px solid #22c55e;
+            pointer-events: none;
+        }
+        .option.incorrect {
+            background-color: #fee2e2;
+            border: 2px solid #ef4444;
+            pointer-events: none;
+        }
+        .explanation {
+            background-color: #f9fafb;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+            display: none;
+        }
+        .explanation.visible {
+            display: block;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+        }
+        .button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .button-primary {
+            background-color: #3b82f6;
+            color: #ffffff;
+        }
+        .button-primary:hover {
+            background-color: #2563eb;
+        }
+        .button-secondary {
+            background-color: #e5e7eb;
+            color: #1f2937;
+        }
+        .button-secondary:hover {
+            background-color: #d1d5db;
+        }
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8 flex items-center justify-center min-h-screen">
+    <div class="container bg-white rounded-xl shadow-lg p-6 md:p-10">
+        <h1 class="text-3xl font-bold text-center mb-6">Sistema de Test Aleatorio UF1646</h1>
+        <!-- Selector de test -->
+        <div class="mb-6">
+            <label for="test-selector" class="block text-lg font-medium text-gray-700 mb-2">Selecciona tipo de test:</label>
+            <select id="test-selector" class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                <option value="all">Todo</option>
+                <option value="eval" >Solo Evaluaciones</option>
+                <option value="test1" >Test 1</option>
+                <option value="test2" >Test 2</option>
+                <option value="test3" >Test 3</option>
+                <option value="eval1" >Evaluación 1</option>
+                <option value="eval2" >Evaluación 2</option>
+               <option value="eval3" >Evaluación 3</option>
+               <option value="evalfinal" selected>Evaluación Final</option>
+            </select>
+        </div>
+        
+        <div id="quiz-container"></div>
+        <div class="nav-buttons flex justify-between mt-6">
+            <button id="prev-btn" class="button button-secondary disabled">Anterior</button>
+            <button id="next-btn" class="button button-primary">Siguiente</button>
+            <button id="restart-btn" class="button button-primary hidden">Volver a empezar</button>
+        </div>
+    </div>
+    
+    <!-- Lógica principal del quiz -->
+    <script type="module">
+        let currentQuestionIndex = 0;
+        let correctAnswers = 0;
+        let incorrectAnswers = 0;
+        let answeredQuestions = new Set();
+        let questions = []; // Array que contendrá todas las preguntas cargadas
+        let finalQuestions = []; // Array que se actualizará con el test final
+
+        const quizContainer = document.getElementById('quiz-container');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const restartBtn = document.getElementById('restart-btn');
+        const testSelector = document.getElementById('test-selector');
+
+        // Función Fisher-Yates para mezclar correctamente
+        function shuffleArray(array) {
+            const shuffled = [...array]; // copiar
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        // Función para inicializar o cambiar el test
+        async function initializeQuiz(testKey) {
+            try {  
+                questions = [];          
+                if (testKey === 'eval1' || testKey === 'all' || testKey === 'eval') {
+                    const mod1e = await import('./UF1646-Eval1.js');
+                    questions = [...questions, ...mod1e.default];
+                }
+                if (testKey == 'eval2' || testKey === 'all' || testKey === 'eval') {
+                    const mod2e = await import('./UF1646-Eval2.js');
+                    questions = [...questions, ...mod2e.default];
+                }
+                if (testKey == 'eval3' || testKey === 'all' || testKey === 'eval') {
+                    const mod3e = await import('./UF1646-Eval3.js');
+                    questions = [...questions, ...mod3e.default];
+                }
+                if (testKey == 'evalfinal' || testKey === 'all' || testKey === 'eval') {
+                    const mod4e = await import('./UF1646-EvalFinal.js');
+                    questions = [...questions, ...mod4e.default];
+                }
+
+                if (testKey == 'test1' || testKey === 'all' ) {
+                    const mod1 = await import('./UF1646-Test1.js');
+                    questions = [...questions, ...mod1.default];
+                }
+                if (testKey == 'test2' || testKey === 'all' ) {
+                    const mod2 = await import('./UF1646-Test2.js');
+                    questions = [...questions, ...mod2.default];
+                }   
+                if (testKey == 'test3' || testKey === 'all' ) {
+                    const mod3 = await import('./UF1646-Test3.js');
+                    questions = [...questions, ...mod3.default];
+                }
+                if (questions.length === 0) {
+                    throw new Error('No se encontraron preguntas para el test seleccionado.');
+                }
+
+                // Seleccionar 10 preguntas aleatorias de questions con Fisher-Yates
+                finalQuestions = shuffleArray(questions);
+                finalQuestions = finalQuestions.slice(0, 10);                
+                currentQuestionIndex = 0;
+                correctAnswers = 0;
+                incorrectAnswers = 0;
+                answeredQuestions.clear();
+                prevBtn.classList.remove('hidden');
+                nextBtn.classList.remove('hidden');
+                restartBtn.classList.add('hidden');
+                renderQuestion();
+            } catch (error) {
+                console.error("Error al cargar el test:", error);
+                quizContainer.innerHTML = `<div class="card text-center text-red-600">
+                    <h2 class="text-2xl font-bold mb-4">¡Error!</h2>
+                    <p>No se pudo cargar el test seleccionado. Asegúrate de que los archivos existan.</p>
+                </div>`;
+                nextBtn.classList.add('hidden');
+                prevBtn.classList.add('hidden');
+            }
+        }
+
+        // Función para renderizar la pregunta actual.
+        function renderQuestion() {
+            quizContainer.innerHTML = '';
+            
+            if (currentQuestionIndex >= finalQuestions.length) {
+                showResults();
+                return;
+            }
+
+            const currentQuestion = finalQuestions[currentQuestionIndex];
+
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            const questionTitle = document.createElement('div');
+            questionTitle.className = 'question-title';
+            questionTitle.textContent = `${currentQuestionIndex + 1}) ${currentQuestion.question}`;
+            card.appendChild(questionTitle);
+
+            // Mezclar las opciones antes de renderizarlas con Fisher-Yates
+            const opcionesMezcladas = shuffleArray(currentQuestion.options);
+            opcionesMezcladas.forEach(optionText => {
+                const option = document.createElement('div');
+                option.className = 'option';
+                option.textContent = optionText;
+                
+                if (answeredQuestions.has(currentQuestionIndex)) {
+                    option.style.pointerEvents = 'none';
+                    if (optionText === currentQuestion.correctAnswer) {
+                        option.classList.add('correct');
+                    } else if (optionText !== currentQuestion.correctAnswer) {
+                        option.classList.add('incorrect');
+                    }
+                } else {
+                    option.addEventListener('click', () => handleOptionClick(option, optionText, currentQuestion.correctAnswer));
+                }
+                card.appendChild(option);
+            });
+            
+            const justification = document.createElement('div');
+            justification.className = 'explanation';
+            justification.textContent = `JUSTIFICACIÓN: ${currentQuestion.justification}`;
+            if (answeredQuestions.has(currentQuestionIndex)) {
+                justification.classList.add('visible');
+            }
+            card.appendChild(justification);
+            
+            quizContainer.appendChild(card);
+            updateNavButtons();
+        }
+
+        // Manejar el clic en una opción.
+        function handleOptionClick(selectedOption, selectedText, correctAnswer) {
+            answeredQuestions.add(currentQuestionIndex);
+
+            if (selectedText === correctAnswer) {
+                correctAnswers++;
+                selectedOption.classList.add('correct');
+            } else {
+                incorrectAnswers++;
+                selectedOption.classList.add('incorrect');
+            }
+            
+            const options = quizContainer.querySelectorAll('.option');
+            options.forEach(option => {
+                option.style.pointerEvents = 'none';
+                if (option.textContent === correctAnswer) {
+                    option.classList.add('correct');
+                }
+            });
+
+            const explanation = quizContainer.querySelector('.explanation');
+            explanation.classList.add('visible');
+        }
+
+        // Función para mostrar los resultados al final del test.
+        function showResults() {
+            quizContainer.innerHTML = `
+                <div class="card text-center">
+                    <h2 class="text-2xl font-bold mb-4">¡Test finalizado!</h2>
+                    <p class="text-lg">Respuestas correctas: <span class="font-semibold text-green-600">${correctAnswers}</span></p>
+                    <p class="text-lg">Respuestas incorrectas: <span class="font-semibold text-red-600">${incorrectAnswers}</span></p>
+                    <p class="text-lg mt-4">Total de preguntas: <span class="font-semibold">${finalQuestions.length}</span></p>
+                </div>
+            `;
+            prevBtn.classList.add('hidden');
+            nextBtn.classList.add('hidden');
+            restartBtn.classList.remove('hidden');
+        }
+
+        // Actualizar el estado de los botones de navegación.
+        function updateNavButtons() {
+            prevBtn.classList.toggle('disabled', currentQuestionIndex === 0);
+            nextBtn.textContent = currentQuestionIndex === finalQuestions.length - 1 ? 'Finalizar' : 'Siguiente';
+        }
+
+        // Función para reiniciar el quiz.
+        function restartQuiz() {
+            initializeQuiz(testSelector.value);
+        }
+
+        // Navegación entre preguntas.
+        prevBtn.addEventListener('click', () => {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                renderQuestion();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentQuestionIndex < questions.length) {
+                currentQuestionIndex++;
+                renderQuestion();
+            }
+        });
+
+        // Event listener para el botón de reiniciar.
+        restartBtn.addEventListener('click', restartQuiz);
+
+        // Event listener para el selector de test
+        testSelector.addEventListener('change', (event) => {
+            initializeQuiz(event.target.value);
+        });
+
+        // Cargar el test inicial.
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeQuiz(testSelector.value);
+        });
+    </script>
+</body>
+</html>
