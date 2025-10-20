@@ -11,11 +11,11 @@ export default [
     correctAnswer:
       "Es la disciplina que se ocupa de la educación y el aprendizaje del adulto.",
     justification:
-      "La **andragogía** es la disciplina que se ocupa de profundizar en la educación y el aprendizaje de los adultos, diferenciándose de la pedagogía, centrada en los niños.",
+      "La andragogía es la disciplina que se ocupa de profundizar en la educación y el aprendizaje de los adultos, diferenciándose de la pedagogía, centrada en los niños.",
   },
   {
     question:
-      "Identifica qué característica no es típica de un alumno/a *on line*:",
+      "Identifica qué característica no es típica de un alumno/a on line:",
     options: [
       "Es gestor de su propio aprendizaje.",
       "Participa de manera activa en foros, chat y las actividades propuestas.",
@@ -25,7 +25,7 @@ export default [
     correctAnswer:
       "No tiene flexibilidad en las distintas formas de aprendizaje.",
     justification:
-      "Los alumnos *online* juegan un papel activo, son capaces de gestionarse, son participativos y tienen competencias técnicas. Todas estas características implican que poseen una gran capacidad de **flexibilidad y adaptación** a las distintas formas de aprendizaje.",
+      "Los alumnos online juegan un papel activo, son capaces de gestionarse, son participativos y tienen competencias técnicas. Todas estas características implican que poseen una gran capacidad de flexibilidad y adaptación a las distintas formas de aprendizaje.",
   },
   {
     question:
@@ -38,7 +38,7 @@ export default [
     ],
     correctAnswer: "El aprendizaje se basa en clases magistrales.",
     justification:
-      "La teleformación **no** puede basarse en clases magistrales. Su base son los contenidos web y foros que fomentan el aprendizaje **constructivo**, **colaborativo** e **individual** (autoaprendizaje).",
+      "La teleformación no puede basarse en clases magistrales. Su base son los contenidos web y foros que fomentan el aprendizaje constructivo, colaborativo e individual (autoaprendizaje).",
   },
   {
     question: "¿Qué área el tutor/a no evalúa?:",
@@ -50,7 +50,7 @@ export default [
     ],
     correctAnswer: "La comunicación no verbal.",
     justification:
-      "Al ser un curso *online* o de teleformación, el tutor/a puede valorar la comunicación escrita, las actitudes, las habilidades adquiridas y el conocimiento, pero no puede valorar la **comunicación no verbal** (gestos, posturas, tono de voz), ya que no hay contacto físico o este es limitado.",
+      "Al ser un curso online o de teleformación, el tutor/a puede valorar la comunicación escrita, las actitudes, las habilidades adquiridas y el conocimiento, pero no puede valorar la comunicación no verbal (gestos, posturas, tono de voz), ya que no hay contacto físico o este es limitado.",
   },
   {
     question: "La evaluación contempla 3 momentos. Señala el incorrecto:",
@@ -62,7 +62,7 @@ export default [
     ],
     correctAnswer: "Evaluación pre-inicial.",
     justification:
-      "La evaluación se realiza en tres momentos del proceso educativo: **Evaluación inicial** (diagnóstico al comienzo), **Evaluación continua** (durante el proceso formativo) y **Evaluación final o sumativa** (al término del curso). La 'pre-inicial' no se considera uno de los tres momentos estándar.",
+      "La evaluación se realiza en tres momentos del proceso educativo: Evaluación inicial (diagnóstico al comienzo), Evaluación continua (durante el proceso formativo) y Evaluación final o sumativa (al término del curso). La 'pre-inicial' no se considera uno de los tres momentos estándar.",
   },
   {
     question: "La guía didáctica de una formación en línea es:",
@@ -87,7 +87,7 @@ export default [
     ],
     correctAnswer: "No es una herramienta para aclarar muchas dudas.",
     justification:
-      "El videotutorial es un recurso muy valioso que permite mejorar el proceso de enseñanza-aprendizaje y, por el contrario, sí sirve como herramienta **para aclarar dudas** de manera dinámica y amena.",
+      "El videotutorial es un recurso muy valioso que permite mejorar el proceso de enseñanza-aprendizaje y, por el contrario, sí sirve como herramienta para aclarar dudas de manera dinámica y amena.",
   },
   {
     question: "Las fases de un videotutorial son (señala la incorrecta):",
@@ -99,7 +99,7 @@ export default [
     ],
     correctAnswer: "Publicidad del curso.",
     justification:
-      "Las fases intrínsecas a la creación de un videotutorial son: **Planeación**, **Estructura del guión**, y **Grabación, edición y publicación**. La publicidad del curso es una acción de marketing o administrativa, no una fase de la producción del videotutorial en sí.",
+      "Las fases intrínsecas a la creación de un videotutorial son: Planeación, Estructura del guión, y Grabación, edición y publicación. La publicidad del curso es una acción de marketing o administrativa, no una fase de la producción del videotutorial en sí.",
   },
   {
     question: "Un jefe de estudios debe poseer unos criterios de coordinación:",
@@ -118,6 +118,6 @@ export default [
     options: ["Glogster.", "Cmaptools.", "Camstudio.", "Easely."],
     correctAnswer: "Camstudio.",
     justification:
-      "**Camstudio** es una herramienta de captura de pantalla (*screencast*) que facilita la grabación de imágenes y sonido en el ordenador, siendo útil para crear videotutoriales y subirlos a plataformas *e-learning*. (Las otras son para pósteres o mapas conceptuales).",
+      "Camstudio es una herramienta de captura de pantalla (screencast) que facilita la grabación de imágenes y sonido en el ordenador, siendo útil para crear videotutoriales y subirlos a plataformas e-learning. (Las otras son para pósteres o mapas conceptuales).",
   },
 ];

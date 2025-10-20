@@ -24,7 +24,7 @@ export default [
     ],
     correctAnswer: "El aula donde se vaya a impartir la sesión.",
     justification:
-      "Los elementos principales para la elección de la modalidad formativa son: los objetivos del curso, la disponibilidad del alumnado, la disponibilidad del equipo docente y las funcionalidades del sistema. El aula física no es un factor determinante para la **modalidad**.",
+      "Los elementos principales para la elección de la modalidad formativa son: los objetivos del curso, la disponibilidad del alumnado, la disponibilidad del equipo docente y las funcionalidades del sistema. El aula física no es un factor determinante para la modalidad.",
   },
   {
     question:
@@ -37,10 +37,10 @@ export default [
     ],
     correctAnswer: "Tutoría didáctica o académica y tutoría orientativa.",
     justification:
-      "Atendiendo a la finalidad, la tutoría puede ser **académica** (para solventar dudas de conocimientos concretos) u **orientadora** (centrada en el asesoramiento y técnicas de estudio).",
+      "Atendiendo a la finalidad, la tutoría puede ser académica (para solventar dudas de conocimientos concretos) u orientadora (centrada en el asesoramiento y técnicas de estudio).",
   },
   {
-    question: "Una de las funciones del tutor *online* es:",
+    question: "Una de las funciones del tutor online es:",
     options: [
       "Intervenir en las reuniones de coordinación, aportando datos sobre alumnos, materiales y el sistema en general.",
       "Ayuda a canalizar situaciones novedosas para el alumnado.",
@@ -49,7 +49,7 @@ export default [
     ],
     correctAnswer: "Todas son correctas.",
     justification:
-      "El tutor *on line* tiene varias funciones y habilidades que incluyen las de carácter orientador, institucional y académico. Todas las opciones son funciones asociadas a estos roles.",
+      "El tutor on line tiene varias funciones y habilidades que incluyen las de carácter orientador, institucional y académico. Todas las opciones son funciones asociadas a estos roles.",
   },
   {
     question:
@@ -75,7 +75,7 @@ export default [
     ],
     correctAnswer: "La tutoría individualizada.",
     justification:
-      "La acción individualizada se logra a través de la **tutoría individualizada**, que es una acción educativa personal y directa que requiere que el tutor/a conozca bien al alumno/a y sus necesidades.",
+      "La acción individualizada se logra a través de la tutoría individualizada, que es una acción educativa personal y directa que requiere que el tutor/a conozca bien al alumno/a y sus necesidades.",
   },
   {
     question:
@@ -101,7 +101,7 @@ export default [
     ],
     correctAnswer: "Autonomía general.",
     justification:
-      "La **autonomía general** incluye la independencia intelectual, la capacidad de reestructurar el pensamiento y conocimientos a partir de diversas fuentes, el establecimiento de estrategias de aprendizaje, la toma de decisiones y la capacidad de ver los errores como una oportunidad de mejora.",
+      "La autonomía general incluye la independencia intelectual, la capacidad de reestructurar el pensamiento y conocimientos a partir de diversas fuentes, el establecimiento de estrategias de aprendizaje, la toma de decisiones y la capacidad de ver los errores como una oportunidad de mejora.",
   },
   {
     question:
@@ -114,7 +114,7 @@ export default [
     ],
     correctAnswer: "La guía del curso.",
     justification:
-      "La **guía del curso** (o guía didáctica) es el documento que orienta el estudio del alumnado, ayudando a comprender y aplicar los diferentes conocimientos y ofreciendo los medios y recursos de apoyo para el aprendizaje.",
+      "La guía del curso (o guía didáctica) es el documento que orienta el estudio del alumnado, ayudando a comprender y aplicar los diferentes conocimientos y ofreciendo los medios y recursos de apoyo para el aprendizaje.",
   },
   {
     question: "La evaluación global y final tiene:",
@@ -126,6 +126,6 @@ export default [
     ],
     correctAnswer: "Carácter sumativo.",
     justification:
-      "La evaluación global y final tiene **carácter sumativo**, ya que refleja los progresos y puntuaciones obtenidas, teniendo en cuenta tanto las valoraciones de la heteroevaluación como de la autoevaluación, para determinar la superación del curso.",
+      "La evaluación global y final tiene carácter sumativo, ya que refleja los progresos y puntuaciones obtenidas, teniendo en cuenta tanto las valoraciones de la heteroevaluación como de la autoevaluación, para determinar la superación del curso.",
   },
 ];

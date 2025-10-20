@@ -15,7 +15,7 @@ export default [
   },
   {
     question:
-      "Identifica qué característica no es típica de un alumno/a *on line*:",
+      "Identifica qué característica no es típica de un alumno/a on line:",
     options: [
       "Es gestor de su propio aprendizaje.",
       "Participa de manera activa en foros, chat y las actividades propuestas.",
@@ -25,7 +25,7 @@ export default [
     correctAnswer:
       "No tiene flexibilidad en las distintas formas de aprendizaje.",
     justification:
-      "Los alumnos *on-line* son activos, participativos y competentes, lo que les otorga una capacidad de **flexibilidad y adaptación**.",
+      "Los alumnos on-line son activos, participativos y competentes, lo que les otorga una capacidad de flexibilidad y adaptación.",
   },
   {
     question:
@@ -50,7 +50,7 @@ export default [
     ],
     correctAnswer: "La comunicación no verbal.",
     justification:
-      "El tutor *e-learning* puede valorar la comunicación escrita, actitudes, habilidades y conocimiento, pero no la **comunicación no verbal**, al ser un curso *on line* sin contacto físico.",
+      "El tutor e-learning puede valorar la comunicación escrita, actitudes, habilidades y conocimiento, pero no la comunicación no verbal, al ser un curso on line sin contacto físico.",
   },
   {
     question: "La evaluación contempla 3 momentos. Señala el incorrecto:",
@@ -62,7 +62,7 @@ export default [
     ],
     correctAnswer: "Evaluación pre-inicial.",
     justification:
-      "La evaluación se realiza en tres momentos: **inicial** (diagnóstico), **continua** (durante el proceso) y **final** o sumativa.",
+      "La evaluación se realiza en tres momentos: inicial (diagnóstico), continua (durante el proceso) y final o sumativa.",
   },
   {
     question: "La guía didáctica de una formación en línea es:",
@@ -87,7 +87,7 @@ export default [
     ],
     correctAnswer: "No es una herramienta para aclarar muchas dudas.",
     justification:
-      "El videotutorial es un recurso que, por el contrario, sí permite mejorar el proceso de enseñanza-aprendizaje y **aclarar dudas** de manera dinámica y amena.",
+      "El videotutorial es un recurso que, por el contrario, sí permite mejorar el proceso de enseñanza-aprendizaje y aclarar dudas de manera dinámica y amena.",
   },
   {
     question: "Las fases de un videotutorial son (señala la incorrecta):",
@@ -118,6 +118,6 @@ export default [
     options: ["Glogster.", "Cmaptools.", "Camstudio.", "Easely."],
     correctAnswer: "Camstudio.",
     justification:
-      "**Camstudio** es una herramienta que facilita la captura de imágenes y sonido en el ordenador para crear videotutoriales (*screencasts*).",
+      "Camstudio es una herramienta que facilita la captura de imágenes y sonido en el ordenador para crear videotutoriales (screencasts).",
   },
 ];

@@ -109,7 +109,7 @@ export default [
     correctAnswer:
       "Colaborar con los tutores de otros cursos para elaborar un plan grupal de orientación.",
     justification:
-      "Las funciones para un plan **individualizado** son: conocer la situación personal y académica, orientar en los ámbitos personal y profesional, y ajustar la respuesta a las necesidades **individuales**. Colaborar en un plan **grupal** no es una tarea directa del plan individualizado.",
+      "Las funciones para un plan individualizado son: conocer la situación personal y académica, orientar en los ámbitos personal y profesional, y ajustar la respuesta a las necesidades individuales. Colaborar en un plan grupal no es una tarea directa del plan individualizado.",
   },
   {
     question:
@@ -118,7 +118,7 @@ export default [
       "La entrevista.",
       "Los cuestionarios.",
       "La tabla de especificaciones.",
-      "El *role playing*.",
+      "El role playing.",
     ],
     correctAnswer: "La entrevista.",
     justification:
