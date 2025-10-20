@@ -1,127 +1,122 @@
 export default [
-  // Preguntas UF1646 Evaluación 2.
+  // Preguntas sobre Modalidades Formativas, e-learning y Tutoría.
   {
     question:
-      "Una de las características que debería tener el alumno/a atendiendo al cambio de paradigmas educativos es:",
-    options: [
-      "Responsabilidad.",
-      "Autoconocimiento.",
-      "Capacidad para trabajar en equipo.",
-      "Todas son las correctas.",
-    ],
-    correctAnswer: "Todas son las correctas.",
+      "La forma de organizar y ofrecer la formación de acuerdo a la presencia o no del alumnado la entendemos como:",
+    options: ["Modalidad.", "Asignatura.", "Elección.", "Criterios."],
+    correctAnswer: "Modalidad.",
     justification:
-      "La educación tradicional está dando paso a un nuevo concepto centrado en el alumno. En este sentido, el alumno/a asume nuevos roles de aprendizaje que incluyen responsabilidad, autoconocimiento y capacidad para trabajar en equipo.",
+      "Se entiende la modalidad educativa como la forma de organizar los cursos de manera presencial o a distancia. De esta forma entendemos que las modalidades formativas pueden ser presenciales, mixta o e-learning.",
   },
   {
     question:
-      "Las condiciones especiales, físicas y mentales, así como la inseguridad y actitudes negativas hacia el estudio influyen en los procesos de enseñanza – aprendizaje y se denominan:",
+      "La educación que tiene un carácter estructurado y define con claridad objetivos, contenidos y duración y que es ofertada por un entorno distinto al educativo se entiende como:",
     options: [
-      "Factores personales.",
-      "Factores domésticos.",
-      "Factores externos.",
-      "Factores intrapersonales.",
+      "Educación formal.",
+      "Educación no formal.",
+      "Educación informal.",
+      "Educación paraformal.",
     ],
-    correctAnswer: "Factores personales.",
+    correctAnswer: "Educación no formal.",
     justification:
-      "Los factores personales hacen referencia a las condiciones mentales o físicas de las personas, así como a sus inseguridades y actitudes, que influyen directamente en los procesos de enseñanza-aprendizaje.",
+      "El objetivo de la educación no formal es potenciar el desarrollo personal, profesional y social de las personas. Suele realizarse en entornos distintos a los educativos y están estructurados. Habitualmente terminan con una certificación.",
   },
   {
     question:
-      "La relevancia del papel del tutor en cualquiera de las modalidades de la acción tutorial va a venir determinada por:",
+      "¿Con la aparición de qué recursos tecnológicos podemos indicar que comenzó a gestarse la formación on-line o el e-learning propiamente dicho?:",
     options: [
-      "Los factores externos de los estudiantes.",
-      "La capacidad de liderar el aula.",
-      "La fase en la que se encuentre el proceso de tutorización.",
-      "Ninguna es correcta.",
+      "Con los ordenadores personales.",
+      "Con la aparición de los CD.",
+      "Con la aparición de internet.",
+      "Con la aparición del Apple.",
     ],
-    correctAnswer: "La fase en la que se encuentre el proceso de tutorización.",
+    correctAnswer: "Con la aparición de internet.",
     justification:
-      "La relevancia del papel del tutor está determinada por la fase del proceso de tutorización. Por ejemplo, en la fase inicial de planificación, el tutor es responsable de la elaboración del Plan de Acción Tutorial (PAT) y la guía de estudio.",
+      "La formación on-line se caracteriza por el uso de internet, que supuso una revolución a nivel comunicativo e informativo.",
   },
   {
     question:
-      "La planificación estratégica de la acción tutorial, la recoge el tutor/a en el siguiente documento:",
+      "Los elementos como los objetivos del curso, la disponibilidad del alumnado, del equipo docente y las funcionalidades del sistema nos ayudan a tomar decisiones sobre:",
     options: [
-      "Planificación de la tutorías.",
-      "Planificación de la programación.",
-      "Plan de acción tutorial.",
-      "Programación del curso.",
+      "La elección de la modalidad formativa.",
+      "La elección del precio del curso.",
+      "La elección de los objetivos del curso.",
+      "La elección de los criterios de evaluación.",
     ],
-    correctAnswer: "Plan de acción tutorial.",
+    correctAnswer: "La elección de la modalidad formativa.",
     justification:
-      "El Plan de Acción Tutorial (PAT) es el documento donde queda registrada la planificación y la acción tutorial que se va a llevar a cabo durante el curso.",
+      "Los elementos principales de los criterios organizativos de eficiencia que nos permiten hacer la elección de la modalidad formativa son los objetivos, la disponibilidad del alumnado, del equipo docente y las funcionalidades del sistema.",
   },
   {
     question:
-      "El esquema básico donde se distribuye y organiza en forma de secuencia temporal el conjunto de experiencias y actividades diseñadas a lo largo de un curso se llama:",
-    options: ["Temporalización.", "Cronograma.", "Calendario.", "Agenda."],
-    correctAnswer: "Cronograma.",
-    justification:
-      "Los cronogramas ayudan a la planificación. Detallan de manera minuciosa y en forma de secuencia temporal las actividades y experiencias a realizar a lo largo de la acción formativa.",
-  },
-  {
-    question: "Un inconveniente del cronograma es (señala la correcta):",
+      "El nivel de interacción del alumnado con el sistema (plataforma) debe de darse en tres niveles:",
     options: [
-      "Impide llevar el ritmo de trabajo.",
-      "Se dejan por escrito los pasos que hay que hacer.",
-      "La medida del tiempo es poco flexible.",
-      "La medida del tiempo es demasiado flexible.",
+      "Informativo, Formativo y Comunicativo.",
+      "Informativo, Formativo y Orientativo.",
+      "Informativo, Comunicativo y Orientativo.",
+      "Formativo, Comunicativo y Orientativo.",
     ],
-    correctAnswer: "La medida del tiempo es poco flexible.",
+    correctAnswer: "Informativo, Formativo y Comunicativo.",
     justification:
-      "Un inconveniente del cronograma es que mide el tiempo de manera poco flexible y no permite hacer adaptaciones fácilmente, lo que no atiende bien a imprevistos.",
+      "Una plataforma tiene que tener varias funcionalidades, de manera que suplan y ayuden en las tareas que deben realizar los tutores y tutoras. El nivel de intervención del alumnado con el sistema se da en tres niveles: informativo, formativo y comunicativo.",
   },
   {
     question:
-      "El primer paso para elaborar un plan de actuación individualizado es:",
+      "El proceso de ayuda al alumno en la elección profesional se denomina:",
     options: [
-      "Hacer la programación.",
-      "Aprobar el plan.",
-      "Planificar.",
-      "Identificar necesidades.",
+      "Orientación personal.",
+      "Orientación profesional.",
+      "Orientación escolar.",
+      "Asesoramiento.",
     ],
-    correctAnswer: "Identificar necesidades.",
+    correctAnswer: "Orientación profesional.",
     justification:
-      "Lo primero que se debe hacer antes de planificar cualquier acción es un diagnóstico de necesidades, para conocer el punto de partida del alumno/a y enfrentarlo con la finalidad del curso.",
-  },
-  {
-    question: "La acción individualizada se consigue a través de:",
-    options: [
-      "La tutoría individualizada.",
-      "La orientación escolar.",
-      "La orientación profesional.",
-      "La tutoría pedagógica.",
-    ],
-    correctAnswer: "La tutoría individualizada.",
-    justification:
-      "La acción individualizada se consigue a través de la tutoría individualizada, que es una acción educativa que se lleva a cabo de forma personal y directa. Requiere que el tutor/a tenga un buen conocimiento del alumno/a y de sus necesidades.",
+      "La orientación es una función, no una persona. Cuando la orientación se dirige al proceso de ayuda profesional, basado en el conocimiento del sujeto y de las posibilidades del entorno, se denomina orientación profesional.",
   },
   {
     question:
-      "Para llevar a cabo el plan individualizado el tutor/a tiene que (señala la incorrecta):",
+      "El apoyo encaminado a solventar los problemas dudas o consultas que el alumno tenga de un conocimiento concreto es:",
     options: [
-      "Conocer la situación personal y académica de cada persona.",
-      "Orientar al alumnado en el ámbito personal, académico y profesional.",
-      "Ajustar la respuesta educativa a las necesidades del alumno/a.",
-      "Colaborar con los tutores de otros cursos para elaborar un plan grupal de orientación.",
+      "Tutoría de orientación.",
+      "Tutoría a distancia.",
+      "Asesoramiento.",
+      "Tutoría académica.",
     ],
-    correctAnswer:
-      "Colaborar con los tutores de otros cursos para elaborar un plan grupal de orientación.",
+    correctAnswer: "Tutoría académica.",
     justification:
-      "Las funciones para un plan individualizado son: conocer la situación personal y académica, orientar en los ámbitos personal y profesional, y ajustar la respuesta a las necesidades individuales. Colaborar en un plan grupal no es una tarea directa del plan individualizado.",
+      "La finalidad del personal docente para desempeñar sus funciones en la tutoría académica es que el alumno consiga mantener un ritmo de participación adecuado. El tutor/a será el acompañante en el proceso de aprendizaje del alumno, resolviendo dudas sobre conocimientos concretos.",
   },
   {
     question:
-      "¿Qué estrategia permite establecer una relación directa en la tutoría individual?:",
+      "Las estrategias que permiten auto revisar el avance y las dificultades de las actividades se denomina:",
     options: [
-      "La entrevista.",
-      "Los cuestionarios.",
-      "La tabla de especificaciones.",
-      "El role playing.",
+      "Estrategias de auto planificación.",
+      "Estrategias de auto regulación.",
+      "Estrategias de autoevaluación.",
+      "Estrategias emocionales.",
     ],
-    correctAnswer: "La entrevista.",
+    correctAnswer: "Estrategias de auto regulación.",
     justification:
-      "La entrevista posibilita establecer una relación directa e intensa en la comunicación. Para ello hay que crear un clima favorable, recoger la información y emitirla.",
+      "Las estrategias de auto regulación permiten la toma de decisiones sobre las acciones a realizar o las condiciones a cambiar para lograr un propósito, para ello es necesario tener la capacidad de revisar los avances y dificultades en el proceso de enseñanza – aprendizaje.",
+  },
+  {
+    question:
+      "Las competencias del tutor/a referidas a las habilidades didácticas, mantenimiento de la disciplina y conocimientos psicológicos y sociales se denominan:",
+    options: ["Académicas.", "Tecnológicas.", "Personales.", "Pedagógicas."],
+    correctAnswer: "Pedagógicas.",
+    justification:
+      "El tutor/a debe actuar con eficiencia, reaccionando a menudo con rapidez ante situaciones siempre nuevas. Para ello es necesario que tenga habilidades didácticas y conocimientos pedagógicos y sociales (competencias pedagógicas).",
+  },
+  {
+    question: "Para seleccionar una estrategia o técnica tendremos en cuenta?:",
+    options: [
+      "Las características personales.",
+      "Características del trabajo a realizar y del contexto.",
+      "La planificación y evaluación del aprendizaje.",
+      "Todas son correctas.",
+    ],
+    correctAnswer: "Todas son correctas.",
+    justification:
+      "Para seleccionar estrategias es necesario tener una visión global del curso, de los objetivos, planificación y evaluación del aprendizaje, así como de las características personales del grupo, el contenido y el trabajo concreto a realizar.",
   },
 ];
