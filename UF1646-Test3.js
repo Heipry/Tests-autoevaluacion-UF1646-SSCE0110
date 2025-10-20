@@ -1,68 +1,29 @@
 export default [
-  // Preguntas sobre Andragogía, Alumno Online y Evaluación (Test 3).
+  // Preguntas sobre Características del Alumno Adulto, Evaluación y Guía Didáctica (Test 3).
   {
-    question: "¿Qué es la andragogía?:",
+    question: "Características del alumnado que participa en la teleformación:",
     options: [
-      "Es la disciplina que se ocupa de la educación y el aprendizaje del adulto.",
-      "Es la disciplina que se ocupa de la educación y el aprendizaje del desempleado.",
-      "Es la ciencia antropológica que explica el aprendizaje en los humanos.",
-      "Es la ciencia del hombre.",
+      "Limitaciones espacio-temporales, ritmo de aprendizaje adaptado a responsabilidades laborales y familiares.",
+      "Experiencias y conocimientos previos.",
+      "Voluntariedad y autonomía.",
+      "Todas son correctas.",
     ],
-    correctAnswer:
-      "Es la disciplina que se ocupa de la educación y el aprendizaje del adulto.",
+    correctAnswer: "Todas son correctas.",
     justification:
-      "La andragogía es la disciplina que se ocupa de profundizar en la educación y el aprendizaje de los adultos.",
+      "Las personas adultas se caracterizan por su voluntariedad, autonomía, la importancia de su experiencia previa y la necesidad de adaptar el ritmo de aprendizaje a sus responsabilidades. El aprendizaje debe ser centrado en situaciones prácticas y bidireccional.",
   },
   {
     question:
-      "Identifica qué característica no es típica de un alumno/a on line:",
+      "Las características del aprendizaje adulto pueden valorarse según:",
     options: [
-      "Es gestor de su propio aprendizaje.",
-      "Participa de manera activa en foros, chat y las actividades propuestas.",
-      "Posee competencias técnicas en el uso y manejo de las tecnologías.",
-      "No tiene flexibilidad en las distintas formas de aprendizaje.",
+      "Dimensión técnica, didáctica y psico afectiva.",
+      "Dimensión experiencia.",
+      "Dimensión de autonomía.",
+      "Dimensión confianza y autoconocimiento.",
     ],
-    correctAnswer:
-      "No tiene flexibilidad en las distintas formas de aprendizaje.",
+    correctAnswer: "Dimensión técnica, didáctica y psico afectiva.",
     justification:
-      "Los alumnos on-line son activos, participativos y competentes, lo que les otorga una capacidad de flexibilidad y adaptación.",
-  },
-  {
-    question:
-      "A continuación se presentan los principios teóricos en los que se basan las metodologías de teleformación. Indica la incorrecta:",
-    options: [
-      "El aprendizaje se construye mediante la experiencias.",
-      "El aprendizaje se basa en clases magistrales.",
-      "El aprendizaje es individual o auto aprendizaje.",
-      "El aprendizaje es colaborativo.",
-    ],
-    correctAnswer: "El aprendizaje se basa en clases magistrales.",
-    justification:
-      "La teleformación no se basa en clases magistrales, sino en contenidos web y foros que fomentan el aprendizaje constructivo, colaborativo e individual.",
-  },
-  {
-    question: "¿Qué área el tutor/a no evalúa?:",
-    options: [
-      "El conocimiento.",
-      "La comunicación no verbal.",
-      "Las habilidades adquiridas.",
-      "Las actitudes.",
-    ],
-    correctAnswer: "La comunicación no verbal.",
-    justification:
-      "El tutor e-learning puede valorar la comunicación escrita, actitudes, habilidades y conocimiento, pero no la comunicación no verbal, al ser un curso on line sin contacto físico.",
-  },
-  {
-    question: "La evaluación contempla 3 momentos. Señala el incorrecto:",
-    options: [
-      "Evaluación pre-inicial.",
-      "Evaluación inicial.",
-      "Evaluación continua.",
-      "Evaluación final.",
-    ],
-    correctAnswer: "Evaluación pre-inicial.",
-    justification:
-      "La evaluación se realiza en tres momentos: inicial (diagnóstico), continua (durante el proceso) y final o sumativa.",
+      "Las características del aprendizaje de personas adultas se estudian según las tres dimensiones de la tarea del tutor/a: Dimensión didáctica (saberes conceptuales), Dimensión técnica (habilidades o procedimientos) y Dimensión psicoafectiva (actitudes).",
   },
   {
     question: "La guía didáctica de una formación en línea es:",
@@ -74,50 +35,95 @@ export default [
     ],
     correctAnswer: "Todas son correctas.",
     justification:
-      "La guía didáctica es el instrumento idóneo para guiar y facilitar el aprendizaje, orientar el estudio e integrar todos los medios y recursos de la acción formativa.",
+      "La guía didáctica es el instrumento idóneo para guiar y facilitar el aprendizaje de forma autónoma, orientando el estudio, ayudando a comprender conocimientos e integrando todos los medios y recursos.",
+  },
+  {
+    question: "Las actividades en teleformación son:",
+    options: [
+      "Un medio para desarrollar habilidades del alumno.",
+      "La manera de fijar los conocimientos teóricos.",
+      "El medio por el cual el contenido teórico se pone en práctica.",
+      "El medio para despertar y mantener el interés de los alumnos.",
+    ],
+    correctAnswer:
+      "El medio por el cual el contenido teórico se pone en práctica.",
+    justification:
+      "Las actividades en teleformación son el medio principal a través del cual el contenido teórico se aplica y se pone en práctica, obligando al alumnado a interactuar con los contenidos y con otros participantes.",
+  },
+  {
+    question: "En la heteroevaluación el tutor evalúa:",
+    options: [
+      "El conocimiento y las habilidades del alumno.",
+      "Las aptitudes del alumno.",
+      "El conocimiento, las habilidades y las actitudes.",
+      "Las actividades enviadas por los alumnos.",
+    ],
+    correctAnswer: "El conocimiento, las habilidades y las actitudes.",
+    justification:
+      "La heteroevaluación, controlada por el tutor/a, evalúa tres áreas fundamentales: El conocimiento (conceptos), las habilidades adquiridas (pruebas prácticas) y las actitudes (participación, ritmo de aprendizaje).",
+  },
+  {
+    question: "El alumno adulto en formación:",
+    options: [
+      "Busca aprender conocimientos teóricos para acrecentar su cultura.",
+      "Busca la aplicación práctica de lo aprendido.",
+      "Busca encontrar trabajo.",
+      "Busca interactuar con un grupo.",
+    ],
+    correctAnswer: "Busca la aplicación práctica de lo aprendido.",
+    justification:
+      "Las personas adultas valoran los contenidos de tipo práctico y buscan un enfoque amplio para resolver situaciones, aplicando sus conocimientos y experiencias previos.",
+  },
+  {
+    question: "Los videotutoriales son:",
+    options: [
+      "Contenidos de la web de utilidad en teleformación.",
+      "Una modalidad síncrona de la capacitación a distancia.",
+      "Un conjunto de herramientas, consejos y trucos.",
+      "Conjunto de instrucciones sobre una determinada aplicación.",
+    ],
+    correctAnswer: "Contenidos de la web de utilidad en teleformación.",
+    justification:
+      "Los videotutoriales son un tipo de contenido muy apreciado en la web, de gran utilidad en formación, consistente en un montaje en formato vídeo a partir de diversas fuentes.",
   },
   {
     question:
-      "Según Ferrer Cacales, R (2012) el videotutorial (señala la incorrecta):",
+      "En teleformación la jefatura de estudio revisará el Plan Tutorial a partir de la memoria eleborada por:",
     options: [
-      "Sirve como acercamiento al profesorado y su asignatura.",
-      "Su estructura mejora la comprensión de las sesiones prácticas.",
-      "Es más dinámico y más ameno.",
-      "No es una herramienta para aclarar muchas dudas.",
+      "Los alumnos.",
+      "Los formadores/tutores.",
+      "Los coordinadores de formación.",
+      "Los directores de formación.",
     ],
-    correctAnswer: "No es una herramienta para aclarar muchas dudas.",
+    correctAnswer: "Los formadores/tutores.",
     justification:
-      "El videotutorial es un recurso que, por el contrario, sí permite mejorar el proceso de enseñanza-aprendizaje y aclarar dudas de manera dinámica y amena.",
+      "La jefatura de estudios revisará el Plan Tutorial basándose en las memorias elaboradas por los tutores (formadores) para coordinar el trabajo docente y asegurar el buen funcionamiento de la acción formativa.",
   },
   {
-    question: "Las fases de un videotutorial son (señala la incorrecta):",
+    question:
+      "La evaluación del proceso de aprendizaje de formación en línea puede examinarse desde dos perspectivas:",
     options: [
-      "Planeación.",
-      "Estructura del guión del videotutorial.",
-      "Publicidad del curso.",
-      "Grabación, edición y publicación.",
+      "La autoevaluación controlada por el propio alumno/a.",
+      "La heteroevaluación controlada por el tutor/a.",
+      "Síncrona y asíncrona.",
+      "La autoevaluación controlada por el propio alumno/a y la heteroevaluación controlada por el tutor/a.",
     ],
-    correctAnswer: "Publicidad del curso.",
+    correctAnswer:
+      "La autoevaluación controlada por el propio alumno/a y la heteroevaluación controlada por el tutor/a.",
     justification:
-      "Las fases de un videotutorial son: planeación, la estructura del guión, grabación, edición y publicación. La publicidad no es una fase intrínseca a su producción.",
+      "La evaluación en formación en línea se aborda desde la autoevaluación (controlada por el alumno/a) y la heteroevaluación (controlada por el tutor/a).",
   },
   {
-    question: "Un jefe de estudios debe poseer unos criterios de coordinación:",
+    question:
+      "Los momentos de una evaluación estarán determinados en diferentes tiempos del proceso formativo:",
     options: [
-      "Coordinar el trabajo de los tutores/as.",
-      "Contribuir al proceso formativo de los tutores/as.",
-      "Asesorar en la planificación de horarios y tareas.",
-      "Todas son correctas.",
+      "Por tiempo de conexión.",
+      "Inicial, continua y final.",
+      "A través de los cuestionarios de autocomprensión.",
+      "Los fijará el alumnado.",
     ],
-    correctAnswer: "Todas son correctas.",
+    correctAnswer: "Inicial, continua y final.",
     justification:
-      "Los jefes de estudios permiten la coordinación entre los agentes educativos, lo que incluye coordinar a los tutores, contribuir a su formación y asesorar en la planificación.",
-  },
-  {
-    question: "Una herramienta de la web 2.0 para realizar videotutoriales es:",
-    options: ["Glogster.", "Cmaptools.", "Camstudio.", "Easely."],
-    correctAnswer: "Camstudio.",
-    justification:
-      "Camstudio es una herramienta que facilita la captura de imágenes y sonido en el ordenador para crear videotutoriales (screencasts).",
+      "Los tres momentos evaluativos estándar en el proceso formativo son: evaluación inicial, evaluación continua y evaluación global y final.",
   },
 ];
